@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: darkblue;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    line-height: 80px;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* Netflix */
+.netflix {
+    width: 150px;
+    height: 250px;
+    margin: 50px;
+    border-left: 50px solid red;
+    border-right: 50px solid red;
+}
+
+.netflix::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: red;
+    display: block;
+    transform: skew(20deg);
+    box-shadow: 0 0 25px black;
+}
+
+/* Google */
+
+.google {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 50%;
+
+    border-top: 40px solid red;
+    border-left: 40px solid yellow;
+    border-bottom: 40px solid green;
+    border-right: 40px solid blue;
+}
+
+.google::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 80px;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid white;     /* triangle pointing right */
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+}
+
+.google::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 40px;
+    background: blue;
+}
+
+.youtube {
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+    position: relative;
+    background-color: red;
+    border-radius: 25px;
+}
+
+.youtube::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 100px;
+    width: 0;
+    height: 0;
+    border-left: 70px solid white;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+}
+
+.insta {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    box-sizing: border-box;
+    position: relative;
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta-inner{
+    width: 140px;
+    height: 140px;
+    border: 8px solid white;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta-inner2 {
+    width: 60px;
+    height: 60px;
+    border: 8px solid white;
+    border-radius: 50%;
+}
+
+.insta-inner::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 90px;
+    width: 17px;
+    height: 17px;
+    background: white;
+    border-radius: 50px;
+}
