@@ -181,7 +181,8 @@ footer strong {
     color: #ffb74d;
 }
 
-/* Print Optimization 
+
+/* Print Optimization */
 
 @media print {
     body {
@@ -203,4 +204,3 @@ footer strong {
     }
 } 
     
-*/
