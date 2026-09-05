@@ -26,7 +26,7 @@ header {
     color: #ffffff;
     background: linear-gradient(135deg, #e65100, #ff7a00);
     padding: 22px 15px;
-    margin-bottom: 30px; /* Increased gap */
+    margin-bottom: 30px;
     border-radius: 6px;
 }
 
@@ -53,7 +53,7 @@ h1 {
     border-left: 5px solid #e65100;
     border-right: 5px solid #2e7d32;
     padding: 14px;
-    margin-bottom: 30px; /* Increased gap */
+    margin-bottom: 30px;
 }
 
 /* Content Cards */
@@ -63,7 +63,7 @@ h1 {
     border-top: 4px solid #e65100;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 30px; /* Increased gap */
+    margin-bottom: 30px;
 }
 
 /* Image and Image Box */
@@ -81,7 +81,7 @@ h1 {
 .card-text h2 {
     color: #e65100;
     margin: 0 0 8px 0;
-    font-size: 19px; /* Fixed: was font-family */
+    font-size: 19px;
 }
 
 .card-text p {
@@ -95,7 +95,7 @@ h1 {
     background-color: #f8fafc;
     border-radius: 8px;
     padding: 18px 20px;
-    margin-bottom: 30px; /* Increased gap */
+    margin-bottom: 30px;
 }
 
 .info-box h2 {
@@ -109,19 +109,21 @@ h1 {
     margin: 0 0 8px 0;
 }
 
-.green-border {
+/* Box 1 (Green Variant) */
+.box-1 {
     border-left: 4px solid #2e7d32;
 }
 
-.green-border h2 {
+.box-1 h2 {
     color: #2e7d32;
 }
 
-.orange-border {
+/* Box 2 (Orange Variant) */
+.box-2 {
     border-left: 4px solid #e65100;
 }
 
-.orange-border h2 { /* Fixed: Target h2 element */
+.box-2 h2 {
     color: #e65100;
 }
 
@@ -130,8 +132,8 @@ h1 {
     background-color: #f8fafc;
     border-radius: 8px;
     padding: 18px 20px;
-    margin-bottom: 30px; /* Increased gap */
-    border-top: 4px solid #2e7d32; /* Fixed: Added width and style */
+    margin-bottom: 30px;
+    border-top: 4px solid #2e7d32;
 }
 
 .milestones h2 {
@@ -179,8 +181,9 @@ footer strong {
     color: #ffb74d;
 }
 
-/* Print Optimization */
-/* @media print {
+/* Print Optimization 
+
+@media print {
     body {
         background-color: #ffffff;
         padding: 0;
@@ -198,4 +201,6 @@ footer strong {
     footer strong {
         color: #0a192f;
     }
-} */
+} 
+    
+*/
