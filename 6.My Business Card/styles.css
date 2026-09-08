@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f1f5f9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Both Cards Common Design */
+.card {
+    width: 380px;
+    height: 220px;
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Front Card Design */
+.front-card {
+    background: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:  solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+}
+
+
+/* ASKR Logo Box Design */
+.logo-box {
+    width: 60px;
+    height: 60px;
+    background: #4f46e5;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+.front-card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0 0 10px 0;
+}
+
+.role {
+    color: #94a3b8;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+
+.front-accent {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #4f46e5, #818cf8);
+}
+
+/* Back Side Card Design */
+
+.back-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ebeef1;
+} 
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e2e8f0;
+}
+
+.profile-info h3{
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.sub-role {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4f46e5;
+    text-transform: uppercase;
+}
+
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+}
+
+.contact-row .icon {
+    width: 20px;
+    font-size: 15px;
+    color: #4f46e5;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.contact-row a,
+.contact-row .contact-text {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+    word-break: break-all;  /*wraps the words inside without overflow */
+}

@@ -19,6 +19,7 @@ h1{
     height: auto;
     margin: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-between;
     align-content: center;
@@ -40,7 +41,7 @@ h1{
     background: red;
     display: block;
     transform: skew(20deg);
-    box-shadow: 0 0 25px black;
+    box-shadow: 0 0 10px rgb(59, 50, 50);
 }
 
 /* Google */
@@ -142,4 +143,36 @@ h1{
     height: 17px;
     background: white;
     border-radius: 50px;
+}
+
+.sbi {
+    width: 300px;
+    height: 300px;
+    background: #1166DD;
+    border-radius: 50%;
+    position: relative;
+    margin: 50px;
+}
+
+.sbi::before {
+    content: "";
+    height: 130px;
+    width: 30px;
+    background: #ffffff;
+
+    position: absolute;
+    bottom: 0;
+    left: 135px;
+}
+
+.sbi::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffffff;
+
+    position: absolute;
+    bottom: 120px;
+    right: 120px;
 }

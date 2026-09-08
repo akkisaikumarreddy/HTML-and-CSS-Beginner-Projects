@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #fefae0; /* Warm Cream Background */
+    color: #2b2d42;            /* Dark Slate Text */
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+
+/* ANNOUNCEMENT & HEADER */
+.top-bar {
+    background-color: #1b4332; /* Deep Forest Green */
+    color: #fefae0;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 13px;
+    animation: pulseGlow 3s infinite ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #fefae0;
+    border-bottom: 1px solid rgba(212, 163, 115, 0.2);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: 800;
+    color: #1b4332;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-icon {
+    color: #d4a373; /* Warm Gold */
+    transition: transform 0.4s ease;
+}
+
+.logo:hover .logo-icon {
+    transform: rotate(20deg);
+}
+
+/* Button Styling (Using your .btn class) */
+.btn {
+    background-color: #1b4332;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 12px rgba(27, 67, 50, 0.15);
+}
+
+.btn:hover {
+    background-color: #2d6a4f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(27, 67, 50, 0.25);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+.btn-large {
+    padding: 14px 28px;
+    font-size: 16px;
+}
+
+.btn i {
+    transition: transform 0.3s ease;
+}
+
+.btn:hover i {
+    transform: translateX(5px);
+}
+
+
+/* MAIN SECTION (.tea)  */
+.tea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tea-container {
+    max-width: 550px;
+    animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+.badge {
+    background-color: #e9edc9; /* Soft Tea Leaf Green */
+    color: #1b4332;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+.tea-container h1 {
+    font-size: 44px;
+    line-height: 1.15;
+    color: #1b4332;
+    margin: 16px 0;
+    font-weight: 800;
+}
+
+.tea-container p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 28px;
+}
+
+.tea-buy {
+    margin-bottom: 40px;
+}
+
+.tea-stats {
+    display: flex;
+    gap: 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 24px;
+}
+
+.stat-item {
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-3px);
+}
+
+.stat-item h3 {
+    font-size: 26px;
+    color: #1b4332;
+}
+
+.stat-item p {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+/* Product Display Card (.tea-card) */
+.tea-card {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px -10px rgba(27, 67, 50, 0.15);
+    position: relative;
+    width: 380px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    flex-shrink: 0;
+    animation: fadeInUp 1s ease-out 0.4s backwards, floatCard 5s ease-in-out 1.4s infinite;
+    transition: box-shadow 0.3s ease;
+}
+
+.tea-card:hover {
+    box-shadow: 0 20px 40px -10px rgba(27, 67, 50, 0.25);
+}
+
+.product-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #d4a373;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.tea-illustration {
+    background: linear-gradient(135deg, #e9edc9, #faedcd);
+    width: 100%;
+    height: 220px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.tea-icon {
+    font-size: 80px;
+    color: #1b4332;
+    animation: steamRise 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.tea-card:hover .tea-icon {
+    transform: scale(1.1);
+}
+
+.tea-card-details h3 {
+    font-size: 20px;
+    color: #1b4332;
+}
+
+.tea-card-details p {
+    font-size: 13px;
+    color: #6c757d;
+    margin: 4px 0 16px 0;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1b4332;
+}
+
+.unit {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.rating {
+    font-size: 13px;
+    color: #f59e0b;
+    font-weight: 600;
+}
+
+
+/*  FOOTER  */
+.footer {
+    background-color: #1b4332;
+    color: #e9edc9;
+    text-align: center;
+    padding: 20px 8%;
+    font-size: 13px;
+}
+
+
+/* KEYFRAME ANIMATIONS */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatCard {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.85;
+    }
+}
+
+@keyframes steamRise {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-4px) scale(1.03);
+    }
+}
+
+/* TABLET RESPONSIVE STYLES (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 16px 6%;
+    }
+
+    .tea {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 6%;
+        gap: 48px;
+    }
+
+    .tea-container {
+        max-width: 700px;
+    }
+
+    .tea-container h1 {
+        font-size: 38px;
+    }
+
+    .tea-stats {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .tea-card {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+/* MOBILE RESPONSIVE STYLES (≤ 600px) */
+@media screen and (max-width: 600px) {
+    .top-bar {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    header {
+        padding: 14px 5%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .tea {
+        padding: 28px 5%;
+        gap: 36px;
+    }
+
+    .tea-container h1 {
+        font-size: 28px;
+        margin: 12px 0;
+    }
+
+    .tea-container p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .btn-large {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .tea-buy {
+        margin-bottom: 28px;
+    }
+
+    .tea-stats {
+        gap: 16px;
+        justify-content: space-around;
+        padding-top: 18px;
+    }
+
+    .stat-item h3 {
+        font-size: 20px;
+    }
+
+    .stat-item p {
+        font-size: 11px;
+    }
+
+    .tea-card {
+        width: 100%;
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .tea-illustration {
+        height: 180px;
+    }
+
+    .tea-icon {
+        font-size: 60px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 16px 5%;
+        font-size: 12px;
+    }
+}

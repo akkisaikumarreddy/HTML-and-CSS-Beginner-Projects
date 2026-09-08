@@ -83,7 +83,7 @@ body{
 
 /* Collapse when checkbox is checked */
 #menu-toggle:checked ~ .wrapper .sidebar {
-  width: 5px;
+  width: 3px;
   overflow: hidden;
 }
 
