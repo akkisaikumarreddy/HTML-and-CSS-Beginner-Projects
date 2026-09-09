@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:  #f1f5f9;
+}
+
+.page-container {
+    min-height: 100vh;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Hide the actual checkbox input */
+#theme-toggle {
+    display: none;
+}
+
+/* --- TOGGLE SWITCH UI --- */
+.toggle-label {
+    width: 70px;
+    height: 36px;
+    background-color: #cbd5e1;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sun-icon {
+    color: #f59e0b;
+    font-size: 16px;
+    margin: 0 0 0 5px;
+}
+
+.moon-icon {
+    color: #94a3b8;
+    font-size: 16px;
+    margin: 0 5px 0 0;
+}
+
+.toggle-ball {
+    width: 28px;
+    height: 28px;
+    background:  #ffffff;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.card {
+    max-width: 450px;
+    background-color: #ffffff;
+    color: #0f172a;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+    padding: 40px;
+}
+
+.card h2 {
+    font-size: 24px;
+    font-weight: 750;
+    margin: 0 0 15px 0;
+    letter-spacing: 0.5px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
+
+.btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* Dark Mode Style when button is clicked */
+#theme-toggle:checked ~ .page-container {
+    background-color: #0f172a;
+}
+
+#theme-toggle:checked ~ .page-container .toggle-label {
+    background-color: #334155;
+}
+
+#theme-toggle:checked ~ .page-container .toggle-ball {
+    transform: translateX(34px);
+    background-color: #0f172a;
+}
+
+/* Change Card Background, Text, and Borders */
+
+#theme-toggle:checked ~ .page-container .card {
+    background-color: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+#theme-toggle:checked ~ .page-container .card h2 {
+    color: #f8fafc;
+}
+
+#theme-toggle:checked ~ .page-container .card p {
+    color: #94a3b8;
+}
+
+#theme-toggle:checked ~ .page-container .btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+@media screen and (max-width:600px) {
+    .page-container {
+        padding: 16px;
+    }
+
+    .toggle-label {
+        width: 60px;
+        height: 32px;
+    }
+
+    .toggle-ball {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Recalculate slider distance for mobile dimensions */
+    #theme-toggle:checked ~ .page-container .toggle-ball {
+        transform: translateX(28px);
+    }
+
+    .sun-icon, .moon-icon {
+        font-size: 13px;
+    }
+
+    .card {
+        padding: 24px 18px;
+        border-radius: 12px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .btn {
+        width: 100%; /* Full width button on small mobile screens */
+        padding: 12px 16px;
+    }
+}

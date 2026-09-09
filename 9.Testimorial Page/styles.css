@@ -1,0 +1,154 @@
+/* --- Global Styles --- */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* Soft dual-tone background instead of stark white */
+  background: linear-gradient(135deg, #f1f5f9 0px, #e2e8f0 100%);
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 24px;
+}
+
+/* --- Container Section --- */
+.testimonials-section {
+  max-width: 1150px;
+  width: 100%;
+}
+
+/* --- Header Area --- */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.badge {
+  background-color: #e0e7ff; /* Soft indigo tint */
+  color: #4338ca; /* Indigo accent */
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border: 1px solid #c7d2fe;
+}
+
+.header h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 16px 0px 8px;
+}
+
+.header p {
+  color: #475569;
+  max-width: 580px;
+  margin: 0px auto;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+/* --- Pure CSS Carousel (Scroll Snap) --- */
+.carousel-container {
+  width: 100%;
+  padding: 8px 0px 32px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 8px 3px 19px;
+  
+  /* Styled subtle scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #94a3b8 transparent;
+}
+
+/* --- Responsive Card Sizing --- */
+.card {
+  flex: 0 0 100%; /* Mobile: 1 card per view */
+  scroll-snap-align: start;
+  
+  /* Slightly off-white card fill for depth */
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0px 10px 25px -5px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #6366f1;
+  box-shadow: 0px 15px 30px -5px rgba(99, 102, 241, 0.15);
+}
+
+.stars {
+  color: #d97706; /* Richer amber tone */
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+
+.quote {
+  color: #334155;
+  line-height: 26px;
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+/* --- User Profile Info --- */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #6366f1;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.role {
+  font-size: 13px;
+  color: #64748b;
+}
+
+
+/* Desktop Breakpoints */
+@media (min-width: 640px) {
+  .card {
+    flex: 0 0 calc(50% - 12px); /* Tablet: 2 cards per view */
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .card {
+    flex: 0 0 calc(33.333% - 16px); /* Desktop: 3 cards per view */
+  }
+}

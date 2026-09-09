@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Toggle | Pure CSS</title>
+    
+    <!-- Font Awesome for Sun/Moon Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hidden Checkbox that controls the entire page theme state -->
+    <input type="checkbox" id="theme-toggle">
+    <main class="page-container">
+
+        <!-- Toggle Switch UI -->
+        <label for="theme-toggle" class="toggle-label" title="Switch Theme">
+
+            <i class="fa-solid fa-sun sun-icon"></i>
+            <i class="fa-solid fa-moon moon-icon"></i>
+            <span class="toggle-ball"></span>
+
+        </label>
+
+        <!-- A Content Card to check the Dark and Light Themes -->
+        <div class="card">
+
+            <h2>Pure CSS Theme Switcher</h2>
+            <p>This entire theme swap is powered using direct HTML checkbox checked state without any JavaScript.</p>
+            <button class="btn">Explore More</button>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
