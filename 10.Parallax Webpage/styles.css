@@ -24,7 +24,6 @@ body {
 }
 
 
-
 .navbar {
     position: fixed;
     top: 0px;
@@ -198,9 +197,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* ==========================================
-   4. CONTENT SECTIONS & THEMES
-   ========================================== */
+
 .content-section {
     padding: 100px 0px;
     text-align: center;
@@ -229,9 +226,7 @@ body {
     color: #94a3b8;
 }
 
-/* ==========================================
-   5. CARDS GRID
-   ========================================== */
+
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -265,9 +260,7 @@ body {
     color: #64748b;
 }
 
-/* ==========================================
-   6. HIGHLIGHT BOX & STATS COUNTER
-   ========================================== */
+
 .highlight-box {
     margin-top: 30px;
     padding: 30px;
@@ -301,9 +294,7 @@ body {
     color: #64748b;
 }
 
-/* ==========================================
-   7. FOOTER
-   ========================================== */
+/* Footer */
 footer {
     background-color: #090d16;
     color: #64748b;
@@ -312,9 +303,8 @@ footer {
     font-size: 14px;
 }
 
-/* ==========================================
-   8. RESPONSIVE DESIGN & MOBILE FIXES
-   ========================================== */
+
+   /* 8. RESPONSIVE DESIGN & MOBILE FIXES */
 @media (max-width: 768px) {
     .parallax-section {
         background-attachment: scroll;
