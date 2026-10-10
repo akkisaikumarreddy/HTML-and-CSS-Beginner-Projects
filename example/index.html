@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Analytics Dashboard - India</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hidden Checkbox for Mobile Navigation Toggle -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+
+  <!-- Main Dashboard Wrapper -->
+  <div class="dashboard-container">
+
+    <!-- Left Navigation Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand">
+          <span class="brand-icon">⚡</span>
+          <h2>NEXUS<span>.IN</span></h2>
+        </div>
+        <!-- Mobile Close Button (X) inside Sidebar -->
+        <label for="nav-toggle" class="close-sidebar-btn">&times;</label>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active"><span class="icon">📊</span> Dashboard</a>
+        <a href="#" class="nav-item"><span class="icon">📈</span> Analytics</a>
+        <a href="#" class="nav-item"><span class="icon">💳</span> UPI Transactions</a>
+        <a href="#" class="nav-item"><span class="icon">👥</span> Clients</a>
+        <a href="#" class="nav-item"><span class="icon">⚙️</span> Settings</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <p class="card-title">BUSINESS PLAN</p>
+        <p class="card-sub">GST Tax Invoice Renewal in 4 days.</p>
+        <a href="#" class="btn-upgrade">Renew Subscription</a>
+      </div>
+    </aside>
+
+    <!-- Overlay backdrop to close sidebar when clicking outside on mobile -->
+    <label for="nav-toggle" class="sidebar-overlay"></label>
+
+    <!-- Main Content Panel -->
+    <main class="main-content">
+
+      <!-- Header / Topbar -->
+      <header class="topbar">
+        <label for="nav-toggle" class="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search GSTIN, clients, payments...">
+        </div>
+
+        <div class="user-profile">
+          <div class="notification-badge"><span class="dot"></span>🔔</div>
+          <div class="avatar">ASKR</div>
+          <div class="user-info">
+            <span class="name">Akki Sai Kumar Reddy</span>
+            <span class="role">Admin (Bengaluru)</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Body -->
+      <div class="dashboard-body">
+
+        <!-- Page Section Header -->
+        <div class="page-header">
+          <h1>SaaS Performance Overview</h1>
+          <span class="date-tag">Last 30 Days (IST)</span>
+        </div>
+
+        <!-- 4 Stat Summary Cards -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="title">Total Monthly Revenue</span>
+              <span class="icon-bg">💰</span>
+            </div>
+            <div class="stat-value">₹39,85,000</div>
+            <div class="stat-footer trend-up">+14.2% <span>vs last month</span></div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="title">Active Subscribers</span>
+              <span class="icon-bg">🚀</span>
+            </div>
+            <div class="stat-value">1,420</div>
+            <div class="stat-footer trend-up">+8.7% <span>vs last month</span></div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="title">Churn Rate</span>
+              <span class="icon-bg">📉</span>
+            </div>
+            <div class="stat-value">1.8%</div>
+            <div class="stat-footer trend-down">-0.4% <span>vs last month</span></div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="title">Avg. Order Value (AOV)</span>
+              <span class="icon-bg">🎯</span>
+            </div>
+            <div class="stat-value">₹10,250</div>
+            <div class="stat-footer trend-up">+3.1% <span>vs last month</span></div>
+          </div>
+        </div>
+
+        <!-- Middle Section: Visual Bar Chart & Target Progress Meters -->
+        <div class="middle-grid">
+          
+          <!-- Bar Chart Widget -->
+          <div class="widget-card">
+            <div class="widget-header">
+              <h3>Monthly Recurring Revenue (MRR)</h3>
+              <span class="badge">FY 2026-27</span>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-col">
+                <div class="bar-container"><div class="bar" style="height: 55%;"></div></div>
+                <span>May</span>
+              </div>
+              <div class="bar-col">
+                <div class="bar-container"><div class="bar" style="height: 70%;"></div></div>
+                <span>Jun</span>
+              </div>
+              <div class="bar-col">
+                <div class="bar-container"><div class="bar" style="height: 62%;"></div></div>
+                <span>Jul</span>
+              </div>
+              <div class="bar-col">
+                <div class="bar-container"><div class="bar" style="height: 85%;"></div></div>
+                <span>Aug</span>
+              </div>
+              <div class="bar-col">
+                <div class="bar-container"><div class="bar active-bar" style="height: 94%;"></div></div>
+                <span>Sep</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quarterly Progress Target Widget -->
+          <div class="widget-card">
+            <div class="widget-header">
+              <h3>Quarterly Targets</h3>
+            </div>
+            <div class="goal-item">
+              <div class="goal-info"><span>Quarterly Revenue Goal</span><strong>82%</strong></div>
+              <div class="progress-bar"><div class="fill" style="width: 82%;"></div></div>
+            </div>
+            <div class="goal-item">
+              <div class="goal-info"><span>Server Uptime (Mumbai DC)</span><strong>99.9%</strong></div>
+              <div class="progress-bar"><div class="fill success" style="width: 99.9%;"></div></div>
+            </div>
+            <div class="goal-item">
+              <div class="goal-info"><span>CSAT Score (India)</span><strong>91%</strong></div>
+              <div class="progress-bar"><div class="fill" style="width: 91%;"></div></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Data Table -->
+        <div class="widget-card">
+          <div class="widget-header">
+            <h3>Recent Subscriptions & Invoices</h3>
+            <a href="#" class="view-link">View All &rarr;</a>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Client Name</th>
+                  <th>Plan Tier</th>
+                  <th>Date</th>
+                  <th>Amount (incl. GST)</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Reliance Digital Solutions</td>
+                  <td>Enterprise Pro</td>
+                  <td>08 Sep 2026</td>
+                  <td>₹41,200.00</td>
+                  <td><span class="status-pill status-active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>TATA Consultancy Hub</td>
+                  <td>Growth Tier</td>
+                  <td>07 Sep 2026</td>
+                  <td>₹12,300.00</td>
+                  <td><span class="status-pill status-active">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Zomato Tech Hub</td>
+                  <td>Starter Plan</td>
+                  <td>05 Sep 2026</td>
+                  <td>₹4,050.00</td>
+                  <td><span class="status-pill status-pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>InfoSys Digital</td>
+                  <td>Enterprise Pro</td>
+                  <td>03 Sep 2026</td>
+                  <td>₹41,200.00</td>
+                  <td><span class="status-pill status-canceled">Canceled</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

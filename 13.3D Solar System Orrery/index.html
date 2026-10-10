@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>3D Solar System Orrery — Pure CSS</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- CONTROL TOGGLES (PURE CSS INTERACTION) -->
+  <input type="checkbox" id="toggle-orbits" class="toggle-input" checked>
+  <input type="checkbox" id="toggle-plane" class="toggle-input">
+
+  <div class="app-container">
+
+    <!-- TOP BAR: HEADER (LEFT) + HUD CONTROLS (RIGHT) -->
+    <div class="top-bar">
+      <header class="hud-header">
+        <div class="badge">CSS3D ENGINEERING</div>
+        <h1 class="title">SOLAR SYSTEM <span>ORRERY</span></h1>
+        <p class="subtitle">An interactive, scale-proportional CSS 3D planetary model</p>
+      </header>
+
+      <!-- CONTROL PANEL MOVED TO TOP RIGHT PINNED CARD -->
+      <div class="hud-controls">
+        <label for="toggle-orbits" class="control-btn btn-orbits">
+          <span class="dot"></span> Toggle Orbit Lines
+        </label>
+        <label for="toggle-plane" class="control-btn btn-plane">
+          <span class="dot"></span> Change Camera Perspective
+        </label>
+      </div>
+    </div>
+
+    <!-- 3D VIEWPORT CONTAINER -->
+    <div class="orrery-viewport">
+      <div class="orrery-space">
+
+        <!-- SUN -->
+        <div class="sun-glow"></div>
+        <div class="celestial-body sun">
+          <div class="sun-flare"></div>
+        </div>
+
+        <!-- MERCURY -->
+        <div class="orbit-ring orbit-mercury">
+          <div class="planet-pivot animate-mercury">
+            <div class="celestial-body mercury" data-name="Mercury"></div>
+          </div>
+        </div>
+
+        <!-- VENUS -->
+        <div class="orbit-ring orbit-venus">
+          <div class="planet-pivot animate-venus">
+            <div class="celestial-body venus" data-name="Venus"></div>
+          </div>
+        </div>
+
+        <!-- EARTH & MOON -->
+        <div class="orbit-ring orbit-earth">
+          <div class="planet-pivot animate-earth">
+            <div class="celestial-body earth" data-name="Earth">
+              <!-- Moon System -->
+              <div class="orbit-moon">
+                <div class="planet-pivot animate-moon">
+                  <div class="celestial-body moon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MARS -->
+        <div class="orbit-ring orbit-mars">
+          <div class="planet-pivot animate-mars">
+            <div class="celestial-body mars" data-name="Mars"></div>
+          </div>
+        </div>
+
+        <!-- JUPITER -->
+        <div class="orbit-ring orbit-jupiter">
+          <div class="planet-pivot animate-jupiter">
+            <div class="celestial-body jupiter" data-name="Jupiter"></div>
+          </div>
+        </div>
+
+        <!-- SATURN & RINGS -->
+        <div class="orbit-ring orbit-saturn">
+          <div class="planet-pivot animate-saturn">
+            <div class="celestial-body saturn" data-name="Saturn">
+              <div class="saturn-ring"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- URANUS -->
+        <div class="orbit-ring orbit-uranus">
+          <div class="planet-pivot animate-uranus">
+            <div class="celestial-body uranus" data-name="Uranus">
+              <div class="uranus-ring"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEPTUNE -->
+        <div class="orbit-ring orbit-neptune">
+          <div class="planet-pivot animate-neptune">
+            <div class="celestial-body neptune" data-name="Neptune"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LEGEND / FOOTER -->
+    <footer class="hud-footer">
+      <div class="planet-legend">
+        <span class="item mercury-tag">Mercury</span>
+        <span class="item venus-tag">Venus</span>
+        <span class="item earth-tag">Earth</span>
+        <span class="item mars-tag">Mars</span>
+        <span class="item jupiter-tag">Jupiter</span>
+        <span class="item saturn-tag">Saturn</span>
+        <span class="item uranus-tag">Uranus</span>
+        <span class="item neptune-tag">Neptune</span>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
