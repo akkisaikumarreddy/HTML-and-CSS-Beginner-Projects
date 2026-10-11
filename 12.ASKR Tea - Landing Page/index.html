@@ -5,224 +5,360 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASKR Tea | Pure Handpicked Organic Tea Powder</title>
     
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <!-- External Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Top Announcement Bar -->
-    <div class="top-bar">
-        <p>🍃 Launch Offer: Get 20% off your first order with code <strong>ASKRFIRST</strong></p>
+    <input type="checkbox" id="theme-toggle">
+    <input type="checkbox" id="review-modal-toggle">
+
+    <div class="page-wrapper">
+
+        <div class="leaf-container" aria-hidden="true">
+            <i class="fa-solid fa-leaf leaf leaf-1"></i>
+            <!-- <i class="fa-solid fa-leaf leaf leaf-2"></i> -->
+            <!-- <i class="fa-solid fa-leaf leaf leaf-3"></i> -->
+            <i class="fa-solid fa-leaf leaf leaf-4"></i>
+            <!-- <i class="fa-solid fa-leaf leaf leaf-5"></i> -->
+            <!-- <i class="fa-solid fa-leaf leaf leaf-6"></i> -->
+            <i class="fa-solid fa-leaf leaf leaf-7"></i>
+        </div>
+
+        <div class="top-bar">
+            <p>🍃 Launch Offer: Get 20% off your first order with code <strong>ASKRFIRST</strong></p>
+        </div>
+
+        <header class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-leaf logo-icon"></i>
+                <span>ASKR Tea</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#about">Our Story</a>
+                <a href="#products">Blends</a>
+                <a href="#benefits">Why ASKR</a>
+                <a href="#reviews">Reviews</a>
+            </nav>
+            <div class="nav-actions">
+                <label for="theme-toggle" class="toggle-label" title="Switch Theme">
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <span class="toggle-ball"></span>
+                </label>
+
+                <a href="#products" class="btn-primary">Shop Now</a>
+            </div>
+        </header>
+
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <span class="badge">100% Single-Origin Organic</span>
+                <h1>Awaken Your Senses with Pure Himalayan Tea</h1>
+                <p>Elevate your daily ritual with ASKR Tea Powder. Finely ground from shade-grown whole leaves, packed with rich antioxidants, natural aroma, and zero artificial additives.</p>
+
+                <div class="hero-cta">
+                    <a href="#products" class="btn-primary btn-large">Order Sample Pack <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#benefits" class="btn-secondary btn-large">Discover the Process</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Organic & Vegan</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>0%</h3>
+                        <p>Added Preservatives</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50k+</h3>
+                        <p>Happy Drinkers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="product-badge">Best Seller</div>
+                <div class="tea-illustration">
+                    <i class="fa-solid fa-mug-hot tea-icon"></i>
+                </div>
+                <div class="hero-card-details">
+                    <h3>Signature Royal Chai Powder</h3>
+                    <p>Cardamom, Ginger & Whole CTC Blend</p>
+                    <div class="price-row">
+                        <span class="price">₹1,199 <span class="unit">/ 250g pack</span></span>
+                        <span class="rating"><i class="fa-solid fa-star"></i> 4.9 (1.2k)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="benefits">
+            <div class="section-title">
+                <span>The ASKR Difference</span>
+                <h2>Crafted with Passion from Leaf to Cup</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+                    <h3>High-Altitude Gardens</h3>
+                    <p>Sourced directly from 6,000 ft elevation estates in Darjeeling, ensuring slow leaf growth and rich complex flavor.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
+                    <h3>Micro-Milled Freshness</h3>
+                    <p>Ground using traditional stone mills to retain essential aroma, natural oils, and peak nutrition in every spoonful.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h3>Rich in Antioxidants</h3>
+                    <p>Packed with natural L-theanine and polyphenols to deliver sustained energy and calm focus without caffeine crashes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <div class="section-title">
+                <span>Explore Our Collection</span>
+                <h2>Find Your Perfect Brew</h2>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <i class="fa-solid fa-jar product-icon"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="tag">Classic</div>
+                        <h3>Royal Assam Black Powder</h3>
+                        <p>Full-bodied, malty brew perfect for morning milk teas.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹999</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card featured">
+                    <div class="product-img-box">
+                        <i class="fa-solid fa-seedling product-icon"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="tag highlight">Popular</div>
+                        <h3>Organic Matcha Green Powder</h3>
+                        <p>Ceremonial grade green tea milled for lattes and smoothies.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹1,499</span>
+                            <a href="#" class="btn-small btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img-box">
+                        <i class="fa-solid fa-pepper-hot product-icon"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="tag">Spiced</div>
+                        <h3>Himalayan Masala Chai</h3>
+                        <p>Infused with crushed clove, cinnamon, black pepper, and ginger.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹1,199</span>
+                            <a href="#" class="btn-small">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="reviews">
+            <div class="section-title">
+                <span>Loved by Tea Connoisseurs</span>
+                <h2>What Our Customers Say</h2>
+            </div>
+
+            <div class="rating-breakdown-card">
+                <div class="rating-score-box">
+                    <span class="score-number">4.9</span>
+                    <div class="stars-large">★★★★★</div>
+                    <span class="score-subtitle">Based on 1,284 reviews</span>
+                </div>
+
+                <div class="rating-bars-box">
+                    <div class="rating-bar-row">
+                        <span class="star-label">5 ★</span>
+                        <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+                        <span class="percent-label">88%</span>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="star-label">4 ★</span>
+                        <div class="progress-track"><div class="progress-fill" style="width: 9%;"></div></div>
+                        <span class="percent-label">9%</span>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="star-label">3 ★</span>
+                        <div class="progress-track"><div class="progress-fill" style="width: 2%;"></div></div>
+                        <span class="percent-label">2%</span>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="star-label">2 ★</span>
+                        <div class="progress-track"><div class="progress-fill" style="width: 1%;"></div></div>
+                        <span class="percent-label">1%</span>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="star-label">1 ★</span>
+                        <div class="progress-track"><div class="progress-fill" style="width: 0%;"></div></div>
+                        <span class="percent-label">0%</span>
+                    </div>
+                </div>
+
+                <div class="rating-cta-box">
+                    <h3>Share Your Experience</h3>
+                    <p>Have you tasted ASKR Tea? Help fellow tea lovers discover their next favorite brew.</p>
+                    <label for="review-modal-toggle" class="btn-primary">
+                        <i class="fa-solid fa-pen"></i> Write a Review
+                    </label>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The aroma of ASKR's Masala Chai as soon as you open the pouch is unreal. It has completely replaced my morning coffee!"</p>
+                    <div class="user-details">
+                        <strong>Rohit Sharma</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"You can immediately tell the quality difference. The powder dissolves smoothly with no gritty residue at the bottom of the cup."</p>
+                    <div class="user-details">
+                        <strong>Sai Kumar</strong>
+                        <span>Tea Enthusiast</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The Organic Matcha is incredible! Vibrantly green, super smooth flavor with zero bitterness, and shipping took only two days."</p>
+                    <div class="user-details">
+                        <strong>Sachin</strong>
+                        <span>Tea Club Member</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Hands down the best Assam powder I've ever brewed. Deep color, rich flavor, and perfect for making authentic kadak chai at home."</p>
+                    <div class="user-details">
+                        <strong>Yashwanth Reddy</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Ordered the sample kit first and ended up buying full jars of all three blends. The packaging keeps everything super fresh too!"</p>
+                    <div class="user-details">
+                        <strong>Samskruthi</strong>
+                        <span>Verified Buyer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fa-solid fa-leaf logo-icon"></i>
+                        <span>ASKR Tea</span>
+                    </div>
+                    <p>Pure, ethical, single-origin tea powder sourced directly from mountain estates to your cup.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#products">Shop Blends</a>
+                    <a href="#benefits">Health Benefits</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Join the Tea Club</h4>
+                    <p>Get weekly brewing tips and 10% off your next order.</p>
+                    <div class="newsletter-box">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 ASKR Tea Co. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <div class="review-modal-overlay">
+            <div class="review-modal">
+                <label for="review-modal-toggle" class="modal-close-btn" title="Close">&times;</label>
+
+                <div class="modal-header">
+                    <h3>Write a Review</h3>
+                    <p>Your feedback helps us craft better brews.</p>
+                </div>
+
+                <form class="review-form" action="#" method="dialog">
+                    <div class="form-group">
+                        <label>Your Rating</label>
+                        <div class="star-select">
+                            <input type="radio" name="star-rating" id="star5" value="5" checked><label for="star5">★</label>
+                            <input type="radio" name="star-rating" id="star4" value="4"><label for="star4">★</label>
+                            <input type="radio" name="star-rating" id="star3" value="3"><label for="star3">★</label>
+                            <input type="radio" name="star-rating" id="star2" value="2"><label for="star2">★</label>
+                            <input type="radio" name="star-rating" id="star1" value="1"><label for="star1">★</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reviewer-name">Full Name</label>
+                            <input type="text" id="reviewer-name" placeholder="e.g. Alex Morgan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewer-email">Email Address</label>
+                            <input type="email" id="reviewer-email" placeholder="alex@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-blend">Tea Blend Tried</label>
+                        <select id="review-blend" required>
+                            <option value="">Select a Blend...</option>
+                            <option value="masala">Himalayan Masala Chai</option>
+                            <option value="matcha">Organic Matcha Green Tea</option>
+                            <option value="assam">Royal Assam Black Powder</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-text">Your Review</label>
+                        <textarea id="review-text" rows="4" placeholder="What did you love about the taste, aroma, or packaging?" required></textarea>
+                    </div>
+
+                    <div class="modal-actions"> 
+                        <label for="review-modal-toggle" class="btn-secondary">Cancel</label>
+                        <label for="review-modal-toggle" class="btn-primary">Submit Review</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </div>
-
-    <!-- Main Navigation Header -->
-    <header class="navbar">
-        <div class="logo">
-            <i class="fa-solid fa-leaf logo-icon"></i>
-            <span>ASKR Tea</span>
-        </div>
-        <nav class="nav-links">
-            <a href="#about">Our Story</a>
-            <a href="#products">Blends</a>
-            <a href="#benefits">Why ASKR</a>
-            <a href="#reviews">Reviews</a>
-        </nav>
-        <div class="nav-actions">
-            <a href="#products" class="btn-primary">Shop Now</a>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-        <div class="hero-content">
-            <span class="badge">100% Single-Origin Organic</span>
-            <h1>Awaken Your Senses with Pure Himalayan Tea</h1>
-            <p>Elevate your daily ritual with ASKR Tea Powder. Finely ground from shade-grown whole leaves, packed with rich antioxidants, natural aroma, and zero artificial additives.</p>
-
-            <div class="hero-cta">
-                <a href="#products" class="btn-primary btn-large">Order Sample Pack <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="#benefits" class="btn-secondary btn-large">Discover the Process</a>
-            </div>
-
-            <!-- Trust Stats -->
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <h3>100%</h3>
-                    <p>Organic & Vegan</p>
-                </div>
-                <div class="stat-item">
-                    <h3>0%</h3>
-                    <p>Added Preservatives</p>
-                </div>
-                <div class="stat-item">
-                    <h3>50k+</h3>
-                    <p>Happy Drinkers</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="hero-card">
-            <div class="product-badge">Best Seller</div>
-            <div class="tea-illustration">
-                <i class="fa-solid fa-mug-hot tea-icon"></i>
-            </div>
-            <div class="hero-card-details">
-                <h3>Signature Royal Chai Powder</h3>
-                <p>Cardamom, Ginger & Whole CTC Blend</p>
-                <div class="price-row">
-                    <span class="price">₹299 <span class="unit">/ 250g pack</span></span>
-                    <span class="rating"><i class="fa-solid fa-star"></i> 4.9 (1.2k)</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Value Propositions / Features -->
-    <section class="features" id="benefits">
-        <div class="section-title">
-            <span>The ASKR Difference</span>
-            <h2>Crafted with Passion from Leaf to Cup</h2>
-        </div>
-
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-mountain-sun"></i></div>
-                <h3>High-Altitude Gardens</h3>
-                <p>Sourced directly from 6,000 ft elevation estates in Darjeeling, ensuring slow leaf growth and rich complex flavor.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
-                <h3>Micro-Milled Freshness</h3>
-                <p>Ground using traditional stone mills to retain essential aroma, natural oils, and peak nutrition in every spoonful.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-shield-heart"></i></div>
-                <h3>Rich in Antioxidants</h3>
-                <p>Packed with natural L-theanine and polyphenols to deliver sustained energy and calm focus without caffeine crashes.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Showcase Section -->
-    <section class="products" id="products">
-        <div class="section-title">
-            <span>Explore Our Collection</span>
-            <h2>Find Your Perfect Brew</h2>
-        </div>
-
-        <div class="product-grid">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <div class="product-img-box">
-                    <i class="fa-solid fa-jar product-icon"></i>
-                </div>
-                <div class="product-info">
-                    <div class="tag">Classic</div>
-                    <h3>Royal Assam Black Powder</h3>
-                    <p>Full-bodied, malty brew perfect for morning milk teas.</p>
-                    <div class="product-footer">
-                        <span class="product-price">₹249</span>
-                        <a href="#" class="btn-small btn-secondary">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="product-card featured">
-                <div class="product-img-box">
-                    <i class="fa-solid fa-seedling product-icon"></i>
-                </div>
-                <div class="product-info">
-                    <div class="tag highlight">Popular</div>
-                    <h3>Organic Matcha Green Powder</h3>
-                    <p>Ceremonial grade green tea milled for lattes and smoothies.</p>
-                    <div class="product-footer">
-                        <span class="product-price">₹499</span>
-                        <a href="#" class="btn-small btn-primary">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="product-card">
-                <div class="product-img-box">
-                    <i class="fa-solid fa-pepper-hot product-icon"></i>
-                </div>
-                <div class="product-info">
-                    <div class="tag">Spiced</div>
-                    <h3>Himalayan Masala Chai</h3>
-                    <p>Infused with crushed clove, cinnamon, black pepper, and ginger.</p>
-                    <div class="product-footer">
-                        <span class="product-price">₹299</span>
-                        <a href="#" class="btn-small btn-secondary">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials" id="reviews">
-        <div class="section-title">
-            <span>Loved by Tea Connoisseurs</span>
-            <h2>What Our Customers Say</h2>
-        </div>
-
-        <div class="reviews-grid">
-            <div class="review-card">
-                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>"The aroma of ASKR's Masala Chai as soon as you open the pouch is unreal. It has completely replaced my morning coffee!"</p>
-                <div class="user-details">
-                    <strong>Priya Sharma</strong>
-                    <span>Verified Buyer</span>
-                </div>
-            </div>
-
-            <div class="review-card">
-                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <p>"You can immediately tell the quality difference. The powder dissolves smoothly with no gritty residue at the bottom of the cup."</p>
-                <div class="user-details">
-                    <strong>Rajesh Nair</strong>
-                    <span>Tea Enthusiast</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <div class="logo">
-                    <i class="fa-solid fa-leaf logo-icon"></i>
-                    <span>ASKR Tea</span>
-                </div>
-                <p>Pure, ethical, single-origin tea powder sourced directly from mountain estates to your cup.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <a href="#about">About Us</a>
-                <a href="#products">Shop Blends</a>
-                <a href="#benefits">Health Benefits</a>
-            </div>
-            <div class="footer-newsletter">
-                <h4>Join the Tea Club</h4>
-                <p>Get weekly brewing tips and 10% off your next order.</p>
-                <div class="newsletter-box">
-                    <input type="email" placeholder="Enter your email">
-                    <button class="btn-primary">Subscribe</button>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 ASKR Tea Co. All rights reserved.</p>
-        </div>
-    </footer>
 
 </body>
 </html>
